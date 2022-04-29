@@ -1,0 +1,1 @@
+awk -v c1=$2 '{print $c1}' $1|tr A-Z a-z|sort|uniq -c|sort -rk 1|awk '{print $2,$1}'>"1e_output_$2_column.freq"
